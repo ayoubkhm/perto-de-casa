@@ -1,23 +1,25 @@
 .pricing-intro{padding-top:66px;padding-bottom:40px}
 .pricing-intro h1{font-size:clamp(2.5rem,4.5vw,4.55rem);line-height:1.11;letter-spacing:-.06em;font-weight:800;max-width:1080px}
 .pricing-description{font-size:1.15rem;line-height:1.65;color:var(--muted);max-width:760px;margin-top:25px}
+.subscription-terms{font-size:.95rem;line-height:1.6;font-weight:600;margin-top:17px}
 .pricing-indicative{font-size:.9rem;line-height:1.65;border-left:4px solid var(--yellow);padding-left:13px;margin-top:24px;color:var(--muted)}
 .pricing-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}
 .price-card{border:1px solid var(--line);background:#fff;padding:33px 30px;border-radius:10px;display:flex;flex-direction:column;min-width:0}
-.price-card h2{font-size:1.65rem;font-weight:800;line-height:1.25;letter-spacing:-.045em}
+.price-card h2{font-size:1.65rem;font-weight:800;line-height:1.25;letter-spacing:-.045em;overflow-wrap:anywhere}
 .offer-description{font-size:1rem;line-height:1.6;color:var(--muted);margin-top:15px;min-height:77px}
 .price{margin-top:23px;display:flex;flex-direction:column;align-items:flex-start;gap:5px}
-.price-from{font-size:.875rem;color:var(--muted)}
 .price strong{font-size:4.6rem;line-height:1.15;letter-spacing:-.065em;font-weight:800;white-space:nowrap}
 .price strong>span{font-size:2rem;letter-spacing:-.035em;margin-left:7px}
 .price-unit{font-size:.95rem;color:var(--muted)}
+.offer-allowance{font-size:.95rem;line-height:1.5;font-weight:700;margin-top:18px;padding-bottom:18px;border-bottom:1px solid var(--line)}
 .offer-features{list-style:none;padding:0;margin:29px 0 32px;display:flex;flex-direction:column;gap:16px;flex:1}
 .offer-features li{display:flex;align-items:flex-start;gap:10px;font-size:.95rem;line-height:1.5;min-width:0}
 .offer-features li .icon{width:20px;height:20px;color:var(--blue);margin-top:1px;stroke-width:2}
 .offer-features li span{min-width:0;overflow-wrap:anywhere}
 .price-card>.button{width:100%;font-size:1rem;padding:16px 14px}
 .price-card-featured{background:var(--blue);border-color:var(--blue);color:white}
-.price-card-featured .offer-description,.price-card-featured .price-from,.price-card-featured .price-unit{color:#e6efff}
+.price-card-featured .offer-description,.price-card-featured .price-unit{color:#e6efff}
+.price-card-featured .offer-allowance{border-color:#ffffff50}
 .price-card-featured .offer-features li .icon{color:white}
 .button-inverse{background:white;color:var(--blue)}
 .button-inverse:hover{background:#eaf2ff}

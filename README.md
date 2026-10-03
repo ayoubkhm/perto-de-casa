@@ -8,7 +8,9 @@ Vitrine franco-portugaise d’accompagnement administratif au Portugal. L’iden
 - Styles de la page Tarifs : `pricing.css`
 - Traductions et interactions : `app.js`
 
-Les offres et prix de 49 €, 149 € et 390 € sont des propositions indicatives à valider avec Hélèna. Le formulaire prépare un récapitulatif téléchargeable sans envoyer de données. L’espace client présente un exemple ; il ne propose pas encore d’accès personnel aux dossiers.
+Les trois abonnements mensuels sont des propositions indicatives à valider avec Hélèna : Essentiel à 19 € (20 minutes d’aide), Accompagnement à 49 € (1 heure d’aide) et Sérénité à 99 € (2 heures d’aide). Le temps inclus couvre les échanges et les interventions, sans report au mois suivant. Les suppléments et les dossiers complexes restent sur devis ; les frais externes sont séparés. Les modalités sans engagement et les prestations sont également à valider avant lancement.
+
+Le choix d’une formule prépare une demande avec l’abonnement envisagé ; il ne déclenche ni paiement ni souscription. Le formulaire crée un récapitulatif téléchargeable sans envoyer de données. L’espace client présente un exemple ; il ne propose pas encore d’accès personnel aux dossiers.
 
 ## Prévisualisation locale
 

@@ -62,10 +62,10 @@
       <div class="hero-inner">
         <div class="hero-copy">
           <h1 id="hero-title" data-i18n-html="heroTitle"><span>Vos démarches</span><span>au Portugal, même</span><span>depuis la France.</span></h1>
-          <p class="hero-description" data-i18n="heroDescription">Une équipe sur place pour vous accompagner et suivre votre dossier.</p>
+          <p class="hero-description" data-i18n="heroDescription">Un abonnement pour garder un interlocuteur sur place et suivre vos démarches au fil des mois.</p>
           <div class="hero-actions">
             <button class="button button-primary hero-cta" type="button" data-open="request" data-i18n="describe">Décrire mon besoin</button>
-            <a class="text-link" href="#services"><span data-i18n="discover">Découvrir les services</span><svg class="icon"><use href="#icon-arrow"/></svg></a>
+            <a class="text-link" href="tarifs.html" data-preserve-language><span data-i18n="discover">Découvrir les abonnements</span><svg class="icon"><use href="#icon-arrow"/></svg></a>
           </div>
         </div>
       </div>
@@ -97,13 +97,13 @@
     <section id="fonctionnement" class="how section-space" aria-labelledby="how-title">
       <div class="page-width how-layout">
         <div class="section-intro">
-          <h2 id="how-title" data-i18n="howTitle">Une démarche.<br>Un suivi clair.</h2>
+          <h2 id="how-title" data-i18n="howTitle">Un abonnement.<br>Un suivi clair.</h2>
           <p data-i18n="howDescription">Vous savez ce qu’il faut préparer, qui vous accompagne et quelle est la prochaine étape.</p>
           <button class="text-link" type="button" data-open="request"><span data-i18n="talk">Parlons de votre situation</span><svg class="icon"><use href="#icon-arrow"/></svg></button>
         </div>
         <ol class="steps">
           <li><span class="step-number" aria-hidden="true">1</span><div><h3 data-i18n="stepOneTitle">Vous nous expliquez votre besoin</h3><p data-i18n="stepOneDescription">Votre situation, votre projet et les difficultés que vous rencontrez.</p></div></li>
-          <li><span class="step-number" aria-hidden="true">2</span><div><h3 data-i18n="stepTwoTitle">Nous définissons l’accompagnement</h3><p data-i18n="stepTwoDescription">Les démarches à prendre en charge, les pièces utiles et le périmètre du service.</p></div></li>
+          <li><span class="step-number" aria-hidden="true">2</span><div><h3 data-i18n="stepTwoTitle">Vous choisissez votre formule</h3><p data-i18n="stepTwoDescription">Un niveau d’aide et un volume de temps mensuel adaptés à votre situation.</p></div></li>
           <li><span class="step-number" aria-hidden="true">3</span><div><h3 data-i18n="stepThreeTitle">Vous avancez avec un interlocuteur</h3><p data-i18n="stepThreeDescription">Un contact pour suivre votre dossier et comprendre les prochaines étapes.</p></div></li>
         </ol>
       </div>
@@ -135,6 +135,7 @@
       <form id="request-form">
         <div class="form-row"><label><span data-i18n="name">Votre nom</span><input name="name" type="text" autocomplete="name" maxlength="100" required></label><label><span data-i18n="email">Votre e-mail</span><input name="email" type="email" autocomplete="email" maxlength="150" required></label></div>
         <div class="form-row"><label><span data-i18n="country">Vous vivez en</span><select name="country"><option value="France">France</option><option value="Suisse" data-i18n="switzerland">Suisse</option><option value="Allemagne" data-i18n="germany">Allemagne</option><option value="Royaume-Uni" data-i18n="uk">Royaume-Uni</option><option value="Portugal">Portugal</option><option value="Autre" data-i18n="other">Autre pays</option></select></label><label><span data-i18n="subject">Votre besoin concerne</span><select name="service"><option value="documents" data-i18n="documents">Documents</option><option value="remote" data-i18n="remote">Démarches à distance</option><option value="return" data-i18n="return">Retour au Portugal</option><option value="other" data-i18n="unsure">Je souhaite en discuter</option></select></label></div>
+        <label><span id="request-plan-label" data-i18n="plan">Formule envisagée</span><select name="plan" aria-labelledby="request-plan-label"><option value="none" data-i18n="noPlan">À définir ensemble</option><option value="essential" data-i18n="essentialTitle">Essentiel</option><option value="support" data-i18n="supportTitle">Accompagnement</option><option value="serenity" data-i18n="serenityTitle">Sérénité</option></select></label>
         <label><span data-i18n="message">Expliquez-nous votre situation</span><textarea name="message" rows="4" maxlength="3000" required data-i18n-placeholder="messagePlaceholder" placeholder="Quelle démarche souhaitez-vous préparer ?"></textarea></label>
         <p class="form-note" data-i18n="formNote">Ne joignez pas de document d’identité ni d’information sensible à ce premier descriptif.</p>
         <button class="button button-primary form-submit" type="submit" data-i18n="prepare">Préparer ma demande</button>
@@ -144,7 +145,7 @@
       <span class="result-icon"><svg class="icon"><use href="#icon-check"/></svg></span>
       <h2 data-i18n="resultTitle" tabindex="-1">Votre demande est prête.</h2>
       <p class="modal-intro" data-i18n="resultIntro">Téléchargez ce récapitulatif pour votre premier échange. Aucune information n’a été envoyée.</p>
-      <div class="request-summary"><dl><dt data-i18n="name">Votre nom</dt><dd id="summary-name"></dd><dt data-i18n="subject">Votre besoin concerne</dt><dd id="summary-service"></dd><dt data-i18n="message">Expliquez-nous votre situation</dt><dd id="summary-message"></dd></dl></div>
+      <div class="request-summary"><dl><dt data-i18n="name">Votre nom</dt><dd id="summary-name"></dd><dt data-i18n="subject">Votre besoin concerne</dt><dd id="summary-service"></dd><dt data-i18n="plan">Formule envisagée</dt><dd id="summary-plan"></dd><dt data-i18n="message">Expliquez-nous votre situation</dt><dd id="summary-message"></dd></dl></div>
       <button id="download-request" class="button button-primary form-submit" type="button"><svg class="icon"><use href="#icon-download"/></svg><span data-i18n="download">Télécharger ma demande</span></button>
       <button id="edit-request" class="text-link result-back" type="button" data-i18n="edit">Modifier ma demande</button>
     </div>
